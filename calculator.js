@@ -34,4 +34,5 @@ function press(val) {
 
   currentInput += val;
   display.textContent = currentInput;
+  console.log("calculator")
 }
