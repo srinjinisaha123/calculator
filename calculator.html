@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Inline CSS Calculator</title>
+</head>
+<body style="font-family: Arial, sans-serif; background: #f0f0f0; display: flex; justify-content: center; align-items: center; height: 100vh;">
+
+<div style="background: #222; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #aaa;">
+  <div id="display" style="background: #000; color: #0f0; font-size: 2em; text-align: right; padding: 10px; border-radius: 5px; margin-bottom: 10px; height: 50px; overflow: hidden;">0</div>
+  
+  <div style="display: grid; grid-template-columns: repeat(4, 60px); gap: 10px;">
+    <button class="btn" style="background: #e63946;" onclick="press('C')" >C</button>
+    <button class="btn" style="background: #444;" onclick="press('/')">/</button>
+    <button class="btn" style="background: #444;" onclick="press('*')">*</button>
+    <button class="btn" style="background: #444;" onclick="press('back')">←</button>
+
+    <button class="btn" style="background: #444;" onclick="press('7')">7</button>
+    <button class="btn" style="background: #444;" onclick="press('8')">8</button>
+    <button class="btn" style="background: #444;" onclick="press('9')">9</button>
+    <button class="btn" style="background: #444;" onclick="press('-')">-</button>
+
+    <button class="btn" style="background: #444;" onclick="press('4')">4</button>
+    <button class="btn" style="background: #444;" onclick="press('5')">5</button>
+    <button class="btn" style="background: #444;" onclick="press('6')">6</button>
+    <button class="btn" style="background: #444;" onclick="press('+')">+</button>
+
+    <button class="btn" style="background: #444;" onclick="press('1')">1</button>
+    <button class="btn" style="background: #444;" onclick="press('2')">2</button>
+    <button class="btn" style="background: #444;" onclick="press('3')">3</button>
+    <button class="btn" style="background: #0a84ff; grid-column: span 2;" onclick="press('=')">=</button>
+
+    <button class="btn" style="background: #444;" onclick="press('0')">0</button>
+    <button class="btn" style="background: #444;" onclick="press('.')">.</button>
+  </div>
+</div>
+
+<script src="calculator.js"></script>
+</body>
+</html>
+
